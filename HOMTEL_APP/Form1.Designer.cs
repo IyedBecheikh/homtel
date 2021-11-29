@@ -29,6 +29,7 @@ namespace HOMTEL_APP
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(welcome_page));
             this.panel1 = new System.Windows.Forms.Panel();
             this.username = new System.Windows.Forms.TextBox();
@@ -37,6 +38,8 @@ namespace HOMTEL_APP
             this.Login_btn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.exit = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -117,12 +120,28 @@ namespace HOMTEL_APP
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // exit
+            // 
+            this.exit.AutoSize = true;
+            this.exit.Location = new System.Drawing.Point(774, 9);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(14, 13);
+            this.exit.TabIndex = 7;
+            this.exit.Text = "X";
+            this.exit.Click += new System.EventHandler(this.exit_Click);
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 25;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // welcome_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.exit);
             this.Controls.Add(this.Login_btn);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.password);
@@ -130,9 +149,11 @@ namespace HOMTEL_APP
             this.Controls.Add(this.username);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "welcome_page";
             this.Text = "Welcome";
+            this.Load += new System.EventHandler(this.welcome_page_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -149,6 +170,8 @@ namespace HOMTEL_APP
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button Login_btn;
+        private System.Windows.Forms.Label exit;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
 
