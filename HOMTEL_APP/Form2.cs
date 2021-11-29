@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace HOMTEL_APP
 {
-    public partial class welcome_page : Form
+    public partial class Form2 : Form
     {
-        public welcome_page()
+        public Form2()
         {
             InitializeComponent();
-        }
-
-        private void Login_btn_Click(object sender, EventArgs e)
-        {
-            Form2 f = new Form2();
-            f.Show();
         }
     }
 }
