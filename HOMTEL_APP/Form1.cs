@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HOMTEL_APP
 {
-    public partial class Form1 : Form
+    public partial class welcome_page : Form
     {
-        public Form1()
+        public welcome_page()
         {
             InitializeComponent();
         }
