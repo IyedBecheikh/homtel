@@ -29,7 +29,6 @@ namespace HOMTEL_APP
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(welcome_page));
             this.panel1 = new System.Windows.Forms.Panel();
             this.username = new System.Windows.Forms.TextBox();
@@ -39,7 +38,6 @@ namespace HOMTEL_APP
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.exit = new System.Windows.Forms.Label();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -130,11 +128,6 @@ namespace HOMTEL_APP
             this.exit.Text = "X";
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 25;
-            this.bunifuElipse1.TargetControl = this;
-            // 
             // welcome_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,7 +164,6 @@ namespace HOMTEL_APP
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button Login_btn;
         private System.Windows.Forms.Label exit;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
 
