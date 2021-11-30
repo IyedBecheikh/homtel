@@ -8,21 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HOMTEL_APP
+namespace homtel_Project
 {
-    public partial class welcome_page : Form
+    public partial class Login : Form
     {
-        public welcome_page()
+        public Login()
         {
             InitializeComponent();
         }
-
-        private void Login_btn_Click(object sender, EventArgs e)
-        {
-            Form2 f = new Form2();
-            f.Show();
-        }
-
         protected override void WndProc(ref Message m)
         {
             switch (m.Msg)
@@ -37,12 +30,28 @@ namespace HOMTEL_APP
             base.WndProc(ref m);
         }
 
-            private void welcome_page_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void exit_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dash dsh = new dash();
+            dsh.Show();
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

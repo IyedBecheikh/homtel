@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HOMTEL_APP
+namespace homtel_Project
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace HOMTEL_APP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new welcome_page());
+            Application.Run(new Login());
         }
     }
 }

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("HOMTEL_APP")]
+[assembly: AssemblyTitle("homtel_Project")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("HOMTEL_APP")]
+[assembly: AssemblyProduct("homtel_Project")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a511643b-ffa8-41cf-9d5c-29ebe99f3b23")]
+[assembly: Guid("f79ee017-aefe-441e-9545-5e41f4c68922")]
 
 // Version information for an assembly consists of the following four values:
 //
