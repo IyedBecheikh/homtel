@@ -38,7 +38,6 @@ namespace HOMTEL_APP
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.exit = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,9 +45,10 @@ namespace HOMTEL_APP
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.Location = new System.Drawing.Point(468, 174);
+            this.panel1.Location = new System.Drawing.Point(624, 214);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 1);
+            this.panel1.Size = new System.Drawing.Size(333, 1);
             this.panel1.TabIndex = 0;
             // 
             // username
@@ -56,10 +56,11 @@ namespace HOMTEL_APP
             this.username.BackColor = System.Drawing.SystemColors.Control;
             this.username.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(508, 136);
+            this.username.Location = new System.Drawing.Point(677, 167);
+            this.username.Margin = new System.Windows.Forms.Padding(4);
             this.username.Multiline = true;
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(205, 32);
+            this.username.Size = new System.Drawing.Size(273, 39);
             this.username.TabIndex = 2;
             // 
             // password
@@ -67,19 +68,21 @@ namespace HOMTEL_APP
             this.password.BackColor = System.Drawing.SystemColors.Control;
             this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.Location = new System.Drawing.Point(508, 222);
+            this.password.Location = new System.Drawing.Point(677, 273);
+            this.password.Margin = new System.Windows.Forms.Padding(4);
             this.password.Multiline = true;
             this.password.Name = "password";
             this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(205, 32);
+            this.password.Size = new System.Drawing.Size(273, 39);
             this.password.TabIndex = 4;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel3.Location = new System.Drawing.Point(468, 260);
+            this.panel3.Location = new System.Drawing.Point(624, 320);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(250, 1);
+            this.panel3.Size = new System.Drawing.Size(333, 1);
             this.panel3.TabIndex = 0;
             // 
             // Login_btn
@@ -91,9 +94,10 @@ namespace HOMTEL_APP
             this.Login_btn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Control;
             this.Login_btn.Font = new System.Drawing.Font("Arial Narrow", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_btn.ForeColor = System.Drawing.Color.White;
-            this.Login_btn.Location = new System.Drawing.Point(468, 288);
+            this.Login_btn.Location = new System.Drawing.Point(624, 354);
+            this.Login_btn.Margin = new System.Windows.Forms.Padding(4);
             this.Login_btn.Name = "Login_btn";
-            this.Login_btn.Size = new System.Drawing.Size(250, 43);
+            this.Login_btn.Size = new System.Drawing.Size(333, 53);
             this.Login_btn.TabIndex = 6;
             this.Login_btn.Text = "Login";
             this.Login_btn.UseVisualStyleBackColor = false;
@@ -102,9 +106,10 @@ namespace HOMTEL_APP
             // pictureBox2
             // 
             this.pictureBox2.Image = global::HOMTEL_APP.Properties.Resources.password;
-            this.pictureBox2.Location = new System.Drawing.Point(468, 222);
+            this.pictureBox2.Location = new System.Drawing.Point(624, 273);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(45, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -112,9 +117,10 @@ namespace HOMTEL_APP
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HOMTEL_APP.Properties.Resources.login;
-            this.pictureBox1.Location = new System.Drawing.Point(468, 136);
+            this.pictureBox1.Location = new System.Drawing.Point(624, 167);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(34, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(45, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -122,30 +128,20 @@ namespace HOMTEL_APP
             // exit
             // 
             this.exit.AutoSize = true;
-            this.exit.Location = new System.Drawing.Point(774, 9);
+            this.exit.Location = new System.Drawing.Point(1032, 11);
+            this.exit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(14, 13);
+            this.exit.Size = new System.Drawing.Size(15, 16);
             this.exit.TabIndex = 7;
             this.exit.Text = "X";
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(155, 243);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // welcome_page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.checkBox1);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.Login_btn);
             this.Controls.Add(this.pictureBox2);
@@ -156,6 +152,7 @@ namespace HOMTEL_APP
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "welcome_page";
             this.Text = "Welcome";
             this.Load += new System.EventHandler(this.welcome_page_Load);
@@ -176,7 +173,6 @@ namespace HOMTEL_APP
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button Login_btn;
         private System.Windows.Forms.Label exit;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 
